@@ -57,7 +57,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="https://github.com/el-khayat"
             rel="noreferrer"
             target="_blank"
           >
