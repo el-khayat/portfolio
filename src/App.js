@@ -14,8 +14,16 @@ function App() {
      
   //creating function to load ip address from the API
   const getData = async()=>{
-    const res = await axios.get('https://geolocation-db.com/json/')
-    await NotifyVisite(res.data)
+     axios.get('https://geolocation-db.com/json/',{
+      
+     })
+     .then(res=>{NotifyVisite(res.data)})
+     .catch(res=>{
+      const obj = {
+        ip: "uncnkonwn"
+      }
+      NotifyVisite(obj)})
+     
 }
 
 useEffect( ()=>{     
@@ -25,14 +33,11 @@ useEffect( ()=>{
 
   return (
     <Routes>
-      
-        <Route path="/" element={<Layout/>} >
-        
+          <Route path="/" element={<Layout/>} >
           <Route index element={<Home/>} />
           <Route path='about' element={<About/>} />
           <Route path='contact' element={<Contact/>} />
           <Route path='projects' element={<Projects/>} />
-
         </Route>
         
     </Routes>
