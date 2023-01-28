@@ -47,16 +47,13 @@ const Project = ({
                 }
               </div>
             </div>
-            <div className="display">
-
-            
+            <div className="display">            
                               {               
                   links.demoLink &&
                   (
                     <a href={links.demoLink}>
                     <img src={image} alt="" />
                   </a>
-    
                   )  
                 }
 

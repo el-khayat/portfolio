@@ -128,3 +128,45 @@
         }
     }
 }
+@media screen and (max-width : 700px) {
+    .nav-bar {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        min-height: 60px;
+        bottom: 0;
+        top: auto;
+
+        .logo{
+            display: none;
+        }
+
+    nav {
+        display: flex;
+        width: 50%;
+        height: 60px;
+        position: relative;
+        margin: auto;
+        margin-top: -30px;
+        justify-content: space-around;
+        align-items: center;
+
+        
+
+    }
+    ul{
+        position: fixed;
+        right: 15px;
+        bottom: 70px;
+        width: auto;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+}
