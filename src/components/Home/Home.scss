@@ -78,6 +78,7 @@
             color: #333;
         }
     }
+
     @media screen and (max-width: 400px) {
       
         h1{
@@ -94,7 +95,9 @@
                 margin-top: 5px;
             }
         }
-
+        .text-zone {
+            width: 90%;
+        }
 
     }
 }
