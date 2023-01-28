@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { ReactComponent as Github } from '../../../assets/icons/github.svg';
 import { ReactComponent as LinkIcon } from '../../../assets/icons/link.svg';
+import "./Project.scss"
 
 const Project = ({
     subTitle,
@@ -18,7 +19,7 @@ const Project = ({
            <h3> <div className="title">{title}</div></h3>
               <div className="descreption">
                 <p>
-                {descreption}
+                { window.innerWidth < 700 ? descreption.slice(0,200)+ " ...":descreption}
                 </p>
               </div>
               <ul class="tools">

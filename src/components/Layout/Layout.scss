@@ -5,19 +5,37 @@
     overflow: hidden;
 }
 
-.top-tags {
-    bottom: auto;
-    top: 35px;
-}
+
+
 
 .tags {
     color: #64ffda;
     opacity: 0.6;
     position: absolute;
-    bottom: 0;
     left: 120px;
     font-size: 18px;
     font-family: 'La Belle Aurore', cursive;
+&.top-tags {
+    bottom: auto;
+    top: 10px;
+    left: 100px;
+    .top-tags-body{
+        margin: 0;
+        left: 10px;
+        top: 15px;
+
+    }
+}
+
+    &.bottom-tags{
+        bottom: 5%;
+        margin-left: 25px;
+        left: 100px;
+
+        .bottom-tag-html{
+            left: -10px;
+        }
+    }
 }
 
 .bottom-tag-html {
@@ -40,6 +58,7 @@
 }
 
 .container.contact-page,
+.container.project-page,
 .container.about-page,
 .container.portfolio-page {
 
@@ -123,7 +142,7 @@
 .top-tags {
     bottom: auto;
     top: 135px;
-    left: 200px;
+    left: 100px;
 }
 
 .tags {
@@ -138,12 +157,16 @@
     font-family: 'La Belle Aurore', cursive;
 
     &.top-tags{
+        left: 2%;
+        top: 2%;
         .top-tags-body{
             margin-left: 20px;
+            
         }
     }
     &.bottom-tags{
-        bottom: 100px;
+        bottom: calc(60px + 3%);
+        left: 2%;
         margin-left: 25px;
     }
 }

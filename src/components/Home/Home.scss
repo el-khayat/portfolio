@@ -79,15 +79,16 @@
         }
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 700px) {
       
         h1{
-            line-height: 10px;
+            line-height: 20px;
             .text-animate-hover{
                 min-width: 10px;
                 display: inline-block;
                 animation-fill-mode: both;
-                font-size: 20px;
+                font-size: 30px;
+                
             }
             img{
                 width: 20px;
@@ -97,6 +98,7 @@
         }
         .text-zone {
             width: 90%;
+
         }
 
     }
