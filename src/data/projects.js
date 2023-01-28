@@ -1,5 +1,5 @@
 import TodoApp from '../assets/images/projects/todo-app.png'
-export default [
+ const data = [
     {
         id : 1 ,
         subTitle: 'Featured Project',
@@ -22,3 +22,4 @@ export default [
     image: TodoApp,
     }
 ]
+export default  data;
