@@ -1,11 +1,12 @@
 .stage-cube-cont {
-    width: 100%;
+    width: 50%;
     height: 100%;
+    top: 0;
     padding-top: 18%;
     margin-left: 0;
-    position: relative;
+    position: fixed;
+    right: 0;
     overflow: hidden;
-    transform: translateY(360px);
 }
 
 .cubespinner {
@@ -16,7 +17,6 @@
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
     margin-left: calc(50% - 100px);
-    position: relative;
 
     div {
         position: absolute;
@@ -74,7 +74,20 @@
             height: 62%;
             transform: translateY(-260px);
         }
-    }
+        .stage-cube-cont {
+            width: 100%;
+            height: 100%;
+            padding-top: 18%;
+            margin-left: 0;
+            position: relative;
+            transform: translateY(360px);
+            overflow: visible;
+        }
+        .cubespinner {
+        position: relative;
+        }
+        
+}
 
 @keyframes spincube {
 
