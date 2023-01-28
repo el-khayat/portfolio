@@ -7,6 +7,7 @@ import Logo from './Logo'
 import './Home.scss'
 
 const Home = () => {
+
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = ['o', 'h', 'a', 'm', 'e', 'd']
@@ -36,6 +37,7 @@ useEffect(() => {
   return (
     <>
       <div className="container home-page">
+
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
@@ -68,6 +70,7 @@ useEffect(() => {
       </div>
 
       <Loader type="pacman" />
+      
     </>
   )
 }

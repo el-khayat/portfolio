@@ -9,8 +9,6 @@ import ProjectsData from '../../data/projects';
 
 const Projects = () => {
 
-console.log(ProjectsData);
-
   // const [image,setImage] = useState(Image);
   const [letterClass, setLetterClass] = useState('text-animate')
   // const form = useRef()

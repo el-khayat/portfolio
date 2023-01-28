@@ -20,15 +20,16 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
+        'service_3pfexmb',
+        'template_jf9nqaq',
         form.current,
-        'your-token'
+        'KvQAOjnqNUktDcAay',
       )
       .then(
         () => {
           alert('Message successfully sent!')
           window.location.reload(false)
+          
         },
         () => {
           alert('Failed to send the message, please try again')

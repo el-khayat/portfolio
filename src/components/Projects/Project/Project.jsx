@@ -22,7 +22,7 @@ const Project = ({
                 { window.innerWidth < 700 ? descreption.slice(0,200)+ " ...":descreption}
                 </p>
               </div>
-              <ul class="tools">
+              <ul className="tools">
                 {
                     tools.map( (tool,index) =>{
                         return (<li key={index}>{tool}</li>)
