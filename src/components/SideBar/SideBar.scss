@@ -167,6 +167,12 @@
         display: flex;
         flex-direction: column;
 
+        li{
+            svg{
+                transform: scale(1.4);
+            }
+        }
+
     }
 }
 }
