@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { ReactComponent as Github } from '../../../assets/icons/github.svg';
 import { ReactComponent as LinkIcon } from '../../../assets/icons/link.svg';
 import "./Project.scss"
@@ -33,17 +32,17 @@ const Project = ({
                 {
                   links.githubLink &&
                   (
-                    <Link to={links.githubLink ?? "#"} className="link" rel="noreferrer" target="_blank">
+                    <a href={links.githubLink ?? "#"} className="link" rel="noreferrer" target="_blank">
                         <Github />
-                    </Link>
+                    </a>
                   )
                 } 
                 {               
                   links.demoLink &&
                   (
-                    <Link to={links.demoLink ?? "#"} className="link" rel="noreferrer" target="_blank">
+                    <a href={links.demoLink ?? "#"} className="link" rel="noreferrer" target="_blank">
                         <LinkIcon />
-                    </Link>
+                    </a>
                   )  
                 }
               </div>

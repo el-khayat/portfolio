@@ -7,22 +7,26 @@ import About from './components/About/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects/Projects'
 import { NotifyVisite } from './firebase/firebase-util';
-import axios from 'axios';
 
 function App() {
 
      
   //creating function to load ip address from the API
   const getData = async()=>{
-     axios.get('https://geolocation-db.com/json/',{
-      
+     fetch('https://geolocation-db.com/json/',{
+      method: "get"
      })
-     .then(res=>{NotifyVisite(res.data)})
-     .catch(res=>{
+     .then(res=>{
+      NotifyVisite(res.data)
+      console.log("with data");
+    })
+    .catch(res=>{
       const obj = {
         ip: "uncnkonwn"
       }
-      NotifyVisite(obj)})
+      NotifyVisite(obj)
+      console.log("with data");
+    })
      
 }
 
