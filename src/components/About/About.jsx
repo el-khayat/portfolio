@@ -26,19 +26,15 @@ const About = () => {
             />
           </h1>
           <p>
+          As a highly skilled and motivated web developer, I have a strong foundation in a range of technologies, including Laravel, React, Java, Node.js, JavaScript, and Python. I excel at problem-solving and communication, and I am always eager to learn and grow in the dynamic field of IT.
+           With a passion for innovation and a dedication to delivering top-quality results, I am confident in my ability to thrive in any project or team environment.
+          </p>
+          <p>
             I'm very ambitious front-end developer looking for a role in
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
-          <p align="LEFT">
-            I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
-          </p>
+                    
         </div>
 
   <Tools/>
