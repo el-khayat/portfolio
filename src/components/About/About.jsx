@@ -30,7 +30,7 @@ const About = () => {
            With a passion for innovation and a dedication to delivering top-quality results, I am confident in my ability to thrive in any project or team environment.
           </p>
           <p>
-            I'm very ambitious front-end developer looking for a role in
+            I'm very ambitious full-stack developer looking for a role in
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>

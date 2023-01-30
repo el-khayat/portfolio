@@ -7,16 +7,16 @@ import About from './components/About/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects/Projects'
 import { NotifyVisite } from './firebase/firebase-util';
+import axios from 'axios';
 
 function App() {
 
      
   //creating function to load ip address from the API
   const getData = async()=>{
-     fetch('https://geolocation-db.com/json/',{
-      method: "get"
-     })
+     axios.get('https://geolocation-db.com/json/')
      .then(res=>{
+      console.log(res.data);
       NotifyVisite(res.data)
       console.log("with data");
     })
